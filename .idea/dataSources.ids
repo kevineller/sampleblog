@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="MySQL - sampleblog@localhost" uuid="fd245c1d-cdfb-435a-98b7-7caadd7ee378">
+    <database-info product="MySQL" version="5.6.12-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.26 ( Revision: ${bzr.revision-id} )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="sampleblog"/>
+    <table name="comments" schema="" catalog="sampleblog" type="TABLE">
+      <column name="id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="postID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="userID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="content" sqlType="TEXT" length="65535" precision="0" nullable="false" jdbcType="-1"/>
+      <column name="addedAt" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" version="true"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="posts" schema="" catalog="sampleblog" type="TABLE">
+      <column name="id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="userID" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="title" sqlType="VARCHAR" length="256" precision="0" nullable="false" jdbcType="12" def="J05vIFRpdGxlJw=="/>
+      <column name="content" sqlType="TEXT" length="65535" precision="0" nullable="false" jdbcType="-1"/>
+      <column name="addedAt" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" version="true"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="users" schema="" catalog="sampleblog" type="TABLE">
+      <column name="id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="username" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <column name="password" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <column name="canPost" sqlType="TINYINT" length="3" precision="0" nullable="false" jdbcType="-6" def="MA=="/>
+      <column name="avPath" sqlType="VARCHAR" length="256" precision="0" nullable="true" jdbcType="12" def="J3N0b2NrVXNlci5wbmcn"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+  </data-source>
+</component>

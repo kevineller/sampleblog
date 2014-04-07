@@ -1,0 +1,28 @@
+
+h1#blogHeader {
+    text-align: center;
+    border-bottom: 1px solid #DDD;
+}
+
+div#sideNav {
+    border: 1px solid #DDD;
+    border-radius: 8px;
+    min-height: 300px;
+    width: 100%;
+    margin-left: 5px;
+    padding: 8px;
+}
+
+div#postContainer {
+    padding-right: 25px;
+}
+
+span.postMetaText {
+    font-size: 11px;
+}
+
+span#loginHeader {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
